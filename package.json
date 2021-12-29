@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "/src/index.js",
+  "repository": "https://github.com/fssn-dev/imercao-nodejs.git",
+  "author": "Fabio dos Santos Nunes <fssn.dev@gmail.com>",
+  "license": "Apache 2.0",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "firebase": "^8.0.0",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

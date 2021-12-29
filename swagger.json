@@ -1,0 +1,148 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "Documentação Swagger",
+        "description": "Documentação feita com o Swagger",
+        "version": "1.0.0"
+    },
+    "basePath": "/",
+    "paths": {
+        "/carros": {
+            "get": {
+                "description": "Rota que busca todos os carros",
+                "tags": [
+                    "Carros"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Busca de carros concluída com sucesso!"
+                    }
+                }
+            }
+        },
+        "/{id}": {
+            "get": {
+                "description": "Rota que busca um carro pelo ID",
+                "tags": [
+                    "Carros"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Carro adicionado com sucesso!"
+                    }
+                }
+            }
+        },
+        "/addCarro": {
+            "post": {
+                "description": "Rota que adiciona um carro",
+                "tags": [
+                    "Carros"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "ano": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "Belina Azul",
+                                    "ano": "1987"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Carro adicionado com sucesso!"
+                    }
+                }
+            }
+        },
+        "/carros/{id}": {
+            "put": {
+                "description": "Rota que edita um carro",
+                "tags": [
+                    "Carros"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "required": true
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "ano": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "Belina Azul",
+                                    "ano": "1987"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Carro editado com sucesso!"
+                    }
+                }
+            }
+        },
+        "/carro/{id}": {
+            "delete": {
+                "description": "Rota que deleta um carro pelo ID",
+                "tags": [
+                    "Carros"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Carro deletado com sucesso!"
+                    }
+                }
+            }
+        }
+    }
+}
