@@ -55,9 +55,9 @@
 Project from Node.js immersion event as seen on Youtube:
 
 
-a href="https://www.youtube.com/watch?v=brZcQ8IEx9w">Day one</a>
-a href="https://www.youtube.com/watch?v=QC3zw9EjchY">Day two</a>
-a href="https://www.youtube.com/watch?v=Jbldoz62rgg">Day three</a>
+* <a href="https://www.youtube.com/watch?v=brZcQ8IEx9w">Day one</a>
+* <a href="https://www.youtube.com/watch?v=QC3zw9EjchY">Day two</a>
+* <a href="https://www.youtube.com/watch?v=Jbldoz62rgg">Day three</a>
 
 
   
